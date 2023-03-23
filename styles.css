@@ -1,2 +1,25 @@
-
 /* Your CSS Code here. */
+.container{
+	display: flex;
+/* 	gap: 5px; */
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.box{
+	width: 100px;
+	height: 100px;
+	background: green;
+}
+
+.box:first-child{
+	background: red;
+	order: 2;
+}
+.box:nth-child(2){
+	background: blue;
+	order: 3;
+}
+.box:last-child{
+/* 	background: green; */
+	order: 1;
+}
